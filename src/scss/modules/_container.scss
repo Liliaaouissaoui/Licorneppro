@@ -1,7 +1,177 @@
+.container-languages {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 100px;
+  color: #999999;
+  padding-bottom: 5px;
+}
+
+.container-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.container-video-enfant {
+  position: relative;
+  width: 547px;
+  height: 520px;
+  margin-right: 50px;
+}
+
+.container-interlude h2 {
+  margin-bottom: 62px;
+  font-size: 50px;
+}
+
+.container-interlude p {
+  margin-bottom: 40px;
+}
+
+.rectangle {
+  background-color: #cccccc;
+  border: 1px solid #999999;
+  position: absolute;
+}
+
+.photo-rectangle {
+  width: 520px;
+  height: 500px;
+  margin-left: -100px;
+}
+
+.video-rectangle {
+  width: 546px;
+  height: 340px;
+  top: 230px;
+  right: -20px;
+  background-color: rgba(204, 204, 204, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.container-sylvain {
+  position: relative;
+  background-image: url(../img/estavayer-le-lac.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  text-align: left;
+  color: #faedcd;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.container-sylvain::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.container-sylvain .container {
+  position: relative;
+  z-index: 2;
+}
+
+.container-sylvain h2 {
+  font-size: 40px;
+}
+
+.container-sylvain p {
+  margin-bottom: 30px;
+  margin-top: 45px;
+}
+
+.container-bio {
+  padding-top: 150px;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.container-bio h2 {
+  font-size: 40px;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.container-bio p {
+  margin-right: 50px;
+  font-size: 12px;
+  margin-bottom: 40px;
+}
+
+.container-bio .custom-button {
+  margin-right: 50px;
+}
+
+.container-bio-image {
+  position: relative;
+  height: 774px;
+  margin-bottom: 80px;
+}
+
+.container-bio-image .rectangle-back {
+  position: absolute;
+  width: 555px;
+  height: 774px;
+  background-color: lightblue;
+  transform: translateX(195px);
+}
+
+.container-bio-image .rectangle-front {
+  position: absolute;
+  width: 433px;
+  height: 548px;
+  background-color: lightcoral;
+  left: -217px;
+  top: 96px;
+  transform: translateX(195px);
+}
+
 .container-insta {
   background-color: #4fb692;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  font-size: 14px;
+}
+
+.container-insta h2 {
+  /* revoir pour faire en sorte qu'il soit + collé au p du dessous */
+  font-size: 40px;
+}
+
+.container-photoinsta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Ajuster hauteur au besoins */
+}
+
+.container-photoinsta img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .container-footer {
   background-color: #ff9111;
+  display: flex;
+}
+
+.container-footer .container {
+  justify-content: flex-end;
 }

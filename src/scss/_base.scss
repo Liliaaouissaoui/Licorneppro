@@ -17,6 +17,7 @@
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -29,7 +30,7 @@ body {
 }
 
 body {
-  background-image: url(../img/background.jpg); /* Chemin vers ton image */
+  background-image: url(../img/background.jpg);
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
   background-attachment: fixed; /* Fixe l'image de fond */
   background-size: cover; /* Assure que l'image couvre tout l'écran */
@@ -46,6 +47,22 @@ video {
   vertical-align: middle;
 }
 
+button {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
 h2 {
   text-transform: uppercase;
   font-family: "Passion One", sans-serif;
@@ -56,14 +73,18 @@ h2 {
 /* ====================================
 // base rules
 // ==================================== */
+
+/*
 .row + .row {
   margin-top: 16px;
 }
 
 .row > .col,
 .row > [class^="col-"] {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: rgba(86, 61, 124, 0.15);
   border: 1px solid rgba(86, 61, 124, 0.2);
 }
+
+*/

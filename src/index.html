@@ -8,29 +8,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div class="col">colonne 1</div>
+        <div class="col-2">
+          <div>
+            <img src="./img/logo.png" alt="logo de la marque Licorne" />
+          </div>
+        </div>
+        <div class="col-6">
+          <nav class="navbar">
+            <a href="#nos-bieres">Nos Bières</a>
+            <a href="#shop">Shop</a>
+            <a href="#notre-histoire">Notre Histoire</a>
+            <a href="#cocktails">Cocktails</a>
+            <a href="#trouvez-nous">Trouvez Nous</a>
+          </nav>
+        </div>
+        <div class="col-4">
+          <div class="button-container">
+            <a class="button-nav btn-contact" href="">CONTACT</a>
+            <a class="button-nav" href=""
+              ><img src="/src/img/login.png" alt="login"
+            /></a>
+            <a class="button-nav" href=""
+              ><img src="/src/img/panier.png" alt=""
+            /></a>
+          </div>
+          <div class="container-languages">
+            <p>FR/DE/EN</p>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          affiche header promotionnelle enfaite se sera en dehors du bootstrap
-          pour que ca fasse tout l'écran
+    <div class="header-affiche">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            affiche header promotionnelle enfaite se sera en dehors du bootstrap
+            pour que ca fasse tout l'écran
+          </div>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="offset-1 col">col 1</div>
-        <div class="col-5">
-          <h2>LA MAGIE DE LICORNE</h2>
+        <div class="offset-1 col container-video">
+          <div class="container-video-enfant">
+            <div class="rectangle photo-rectangle"></div>
+            <div class="rectangle video-rectangle">video promotionnelle</div>
+          </div>
+        </div>
+        <div class="col-5 container-interlude">
+          <h2>LA MAGIE DE <br />LICORNE</h2>
           <p>
             La brasserie est basée à Estavayer-le-Lac dans une bâtisse
             médiévale. 3 personnes y travaillent avec Sylvain. On y trouve
@@ -43,23 +77,53 @@
             valorisée à plus d'un milliard de dollars, non cotée en bourse et
             non filiale d'un grand groupe.” -wikipédia
           </p>
-          <button>regarde notre processus</button>
+          <a class="custom-button">
+            REGARDE NOTRE PROCESSUS (rajouter un target lien pour quil comprenne
+            que ca menne a une autre page)
+            <img src="./img/arrow-light.png" alt="Arrow" class="arrow-img" />
+          </a>
         </div>
       </div>
+    </div>
+    <div class="biere-container">
+      <h1 class="biere-title">Blonde Helle Blond</h1>
+      <div class="red-background">
+        <div class="biere-image">
+          <img src="/src/img/biere-brune.png" alt="Description de l'image" />
+        </div>
+        <div class="biere-text">
+          <p>
+            Eau, malt d'orge, colorant : E150c, arôme naturel, houblon.
+            <br />Allergènes : gluten<br /><br />
+            Contenant : bouteille en verre de 33cl<br />Prix à l'unité : CHF
+            4.60<br />Prix au pack de 4 : CHF 16.-
+          </p>
+        </div>
+      </div>
+      <button class="shop-button">SHOP</button>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2>nos bières</h2>
+          <h2 id="nos-bieres">nos bières</h2>
         </div>
-        <div class="col"><h2>blonde helle blond</h2></div>
+        <div class="col biere-container">
+          <div>
+            <h2>brune dunkel dark</h2>
+            <p>description</p>
+            <button id="shop">SHOP</button>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="container-sylvain">
+    <div id="notre-histoire" class="container-sylvain">
       <div class="container">
         <div class="row">
-          <div class="col">
-            <h2>créé avec le plus grand amour pour la bière</h2>
+          <div class="offset-1 col-9">
+            <h2>
+              créé avec le plus <br />
+              grand amour pour <br />la bière
+            </h2>
             <p>
               Sylvain a 35 ans. Il est né à Estavayer-Le-Lac. Il est un
               entrepreneur né, animé par une grande passion. Depuis plusieurs
@@ -70,15 +134,40 @@
               durant l'un de ses voyages au Canada qu’il a décidé de se lancer
               dans la production de bière.
             </p>
-            <button>lire toute l’histoire</button>
+            <button class="custom-button-inverse">LIRE NOTRE HISTOIRE</button>
           </div>
         </div>
       </div>
     </div>
+    <div class="banner">
+      <div class="banner-content">
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+        <img src="./img/reduced_logo.png" alt="Logo" />
+      </div>
+    </div>
     <div class="container">
       <div class="row">
-        <div class="col-5">
-          <h2>en symbiose avec la nature</h2>
+        <div class="col-5 container-bio">
+          <h2>en symbiose avec la nature de notre région</h2>
           <p>
             Chez Licorne, nous avons à cœur de travailler en harmonie avec la
             nature. Chaque bouteille de notre bière sans alcool est produite
@@ -91,28 +180,39 @@
             notre processus de production respectueux de la nature et
             l'engagement de notre équipe envers la durabilité et l'excellence.
           </p>
-          <button>VOIR PLUS</button>
+          <button class="custom-button">
+            VOIR PLUS
+            <img src="./img/arrow-light.png" alt="Arrow" class="arrow-img" />
+          </button>
         </div>
-        <div class="col-7">col 2</div>
+        <div class="col-7 container-bio-image">
+          <div class="rectangle-back"></div>
+          <div class="rectangle-front"></div>
+        </div>
       </div>
     </div>
     <div class="section-coktail">
       <div class="container">
         <div class="row">
-          <div class="col-3"><h2>tes coktails</h2></div>
+          <div class="col-3" id="cocktails"><h2>tes coktails</h2></div>
           <div class="col-7">
             <p>
               nous savons que les moktail ne sont pas si connu que ça donc nous
               t'avons concocté des recettes rien que pour toi !
             </p>
           </div>
-          <div class="col-2"><button>VOIR PLUS</button></div>
+          <div class="col-2">
+            <button class="custom-button-2">
+              VOIR PLUS
+              <img src="./img/arrow-light.png" alt="Arrow" class="arrow-img" />
+            </button>
+          </div>
           <div class="col-4">
             <div class="flip-container">
               <div class="flipper">
                 <div class="front">
                   <!-- Contenu du recto -->
-                  <p>Texte de face</p>
+                  <p>image</p>
                 </div>
                 <div class="back">
                   <!-- Contenu du verso -->
@@ -126,7 +226,7 @@
               <div class="flipper">
                 <div class="front">
                   <!-- Contenu du recto -->
-                  <p>Texte de face</p>
+                  <p>image</p>
                 </div>
                 <div class="back">
                   <!-- Contenu du verso -->
@@ -140,7 +240,7 @@
               <div class="flipper">
                 <div class="front">
                   <!-- Contenu du recto -->
-                  <p>Texte de face</p>
+                  <p>image</p>
                 </div>
                 <div class="back">
                   <!-- Contenu du verso -->
@@ -152,20 +252,31 @@
         </div>
       </div>
     </div>
-    <div class="container-insta">
+    <div class="container-insta" id="trouvez-nous">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <h2>retrouve nos aventures !</h2>
-            <br />
             <p>@brasserie-licorne</p>
           </div>
-          <div class="col">photo insta</div>
-          <div class="col">photo insta</div>
-          <div class="col">photo insta</div>
-          <div class="col">photo insta</div>
-          <div class="col">photo insta</div>
-          <div class="col">photo insta</div>
+          <div class="col container-photoinsta">
+            <img src="./img/photo-insta-6.jpg" alt="" />
+          </div>
+          <div class="col container-photoinsta">
+            <img src="./img/photo-insta-5.jpg" alt="" />
+          </div>
+          <div class="col container-photoinsta">
+            <img src="./img/photo-insta-4.jpg" alt="" />
+          </div>
+          <div class="col container-photoinsta">
+            <img src="./img/photo-insta-3.jpg" alt="" />
+          </div>
+          <div class="col container-photoinsta">
+            <img src="./img/photo-insta-2.jpg" alt="" />
+          </div>
+          <div class="col container-photoinsta">
+            <img src="./img/photo-insta-1.jpg" alt="" />
+          </div>
         </div>
       </div>
     </div>
@@ -173,7 +284,7 @@
       <div class="container">
         <div class="row">
           <div class="col-2">
-            logo
+            <img src="./img/logo.png" alt="logo de la marque Licorne" />
             <p>©2024 Licorne. Tous droits réservés.</p>
             <p>
               Licorne<br />
@@ -184,9 +295,20 @@
           </div>
           <div class="col-2">col 2</div>
           <div class="col-2">col 3</div>
-          <div class="col">
+          <div class="col newsletter-container">
             <h3>inscris toi à la newsletter !</h3>
-            email SUIS NOUS insta tiktok
+            <div class="button-textfield newsletter-element">
+              <input type="email" id="email" name="email" required />
+              <label for="email">Mail</label>
+              <img
+                src="./img/arrow-dark.png"
+                alt="Flèche"
+                class="arrow-icon"
+                style="right: 30px"
+              />
+            </div>
+            <p class="newsletter-element">SUIS NOUS</p>
+            <p class="newsletter-element">insta tiktok</p>
           </div>
         </div>
       </div>

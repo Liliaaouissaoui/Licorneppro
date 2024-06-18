@@ -1,0 +1,86 @@
+/* Style de base pour le corps de la page 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+*/
+
+.biere-container {
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Arrière-plan rouge */
+.red-background {
+  background-color: red;
+  display: flex;
+  padding: 20px;
+  width: calc(
+    100% - 40px
+  ); /* Pour occuper presque toute la largeur de la fenêtre, moins une marge */
+  margin-left: -20px; /* Pour toucher le bord gauche */
+  box-sizing: border-box;
+  border-radius: 0 15px 15px 0; /* Coins arrondis uniquement à droite */
+  position: relative;
+  overflow: visible;
+}
+
+/* Style de l'image */
+.biere-image {
+  flex: 1; /* Occupe 1/4 de l'espace du conteneur */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.biere-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  top: -500px;
+}
+
+.biere-text {
+  flex: 3; /* Occupe 3/4 de l'espace du conteneur */
+  color: #000;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.biere-text p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.shop-button {
+  background-color: #f5f5dc;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%); /* Centrage horizontal */
+}
+
+.shop-button:hover {
+  background-color: #e5e5cc;
+}
+
+.biere-title {
+  position: absolute;
+  top: 10px; /* Ajuster selon hauteur désirée */
+  right: 100px;
+  font-size: 24px;
+  font-weight: bold;
+  transform: translateY(-100%);
+}
