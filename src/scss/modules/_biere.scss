@@ -1,12 +1,3 @@
-/* Style de base pour le corps de la page 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
-}
-*/
-
 .biere-container {
   position: relative;
   padding: 20px;
@@ -25,6 +16,7 @@ body {
   box-sizing: border-box;
   border-radius: 0 15px 15px 0; /* Coins arrondis uniquement à droite */
   position: relative;
+  top: 500px;
   overflow: visible;
 }
 
@@ -32,25 +24,24 @@ body {
 .biere-image {
   flex: 1; /* Occupe 1/4 de l'espace du conteneur */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
+  justify-content: left;
+  align-items: left;
+  position: absolute;
+  top: -500px;
 }
 
 .biere-image img {
   max-width: 100%;
   height: auto;
   display: block;
-  top: -500px;
 }
 
 .biere-text {
-  flex: 3; /* Occupe 3/4 de l'espace du conteneur */
   color: #000;
   padding-left: 20px;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
+  position: relative;
+  left: 300px;
 }
 
 .biere-text p {
@@ -59,9 +50,9 @@ body {
 }
 
 .shop-button {
-  background-color: #f5f5dc;
+  background-color: #c3d1b8;
   border: none;
-  padding: 10px 20px;
+  padding: 10px 50px;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
@@ -70,6 +61,14 @@ body {
   bottom: 0px;
   left: 50%;
   transform: translateX(-50%); /* Centrage horizontal */
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  font-size: 12px;
+  text-transform: uppercase;
+  top: 730px;
 }
 
 .shop-button:hover {

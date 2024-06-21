@@ -167,11 +167,38 @@
   max-height: 100%;
 }
 
-.container-footer {
+.container-footer-background {
   background-color: #ff9111;
   display: flex;
+  padding: 10px;
 }
 
 .container-footer .container {
   justify-content: flex-end;
+}
+
+.container-footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-footer img {
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+
+.container-footer p {
+  color: #faedcd;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.container-footer ul {
+  list-style-type: none;
+  color: #faedcd;
+  padding-top: 60px;
+}
+
+.container-footer li {
+  padding-bottom: 10px;
 }

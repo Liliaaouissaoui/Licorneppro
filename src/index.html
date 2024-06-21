@@ -17,7 +17,11 @@
       <div class="row">
         <div class="col-2">
           <div>
-            <img src="./img/logo.png" alt="logo de la marque Licorne" />
+            <img
+              class="navbar-img"
+              src="./img/logo.png"
+              alt="logo de la marque Licorne"
+            />
           </div>
         </div>
         <div class="col-6">
@@ -86,11 +90,8 @@
       </div>
     </div>
     <div class="biere-container">
-      <h1 class="biere-title">Blonde Helle Blond</h1>
+      <h2 class="biere-title">Blonde Helle Blond</h2>
       <div class="red-background">
-        <div class="biere-image">
-          <img src="/src/img/biere-brune.png" alt="Description de l'image" />
-        </div>
         <div class="biere-text">
           <p>
             Eau, malt d'orge, colorant : E150c, arôme naturel, houblon.
@@ -99,6 +100,7 @@
             4.60<br />Prix au pack de 4 : CHF 16.-
           </p>
         </div>
+        <div class="biere-image"></div>
       </div>
       <button class="shop-button">SHOP</button>
     </div>
@@ -186,8 +188,15 @@
           </button>
         </div>
         <div class="col-7 container-bio-image">
-          <div class="rectangle-back"></div>
-          <div class="rectangle-front"></div>
+          <div class="rectangle-back">
+            <img
+              src="img/photo-ble-fond.png"
+              alt="photo de champ de blé pris en photo de près"
+            />
+          </div>
+          <div class="rectangle-front">
+            <img src="img/provisoire-photo-front.png" alt="photo du produit" />
+          </div>
         </div>
       </div>
     </div>
@@ -212,7 +221,7 @@
               <div class="flipper">
                 <div class="front">
                   <!-- Contenu du recto -->
-                  <p>image</p>
+                  <img src="img/cocktail-on-1.jpg" alt="" />
                 </div>
                 <div class="back">
                   <!-- Contenu du verso -->
@@ -220,13 +229,57 @@
                 </div>
               </div>
             </div>
+            <h2 class="cocktail-title">GINGER BEER</h2>
+          </div>
+          <div class="col-4">
+            <div class="flip-container">
+              <div class="flipper">
+                <div class="front">
+                  <!-- recto -->
+                  <img
+                    src="img/cocktail-center.jpg"
+                    alt="Image"
+                    class="card-image"
+                  />
+                </div>
+                <div class="back">
+                  <!-- verso -->
+                  <div class="content">
+                    <h2>Pour Blonde Helle Blond</h2>
+                    <p><strong>Ingrédients :</strong></p>
+                    <ul>
+                      <li>12 cl de blonde Helle Blond</li>
+                      <li>4 cl de champagne brut frappé</li>
+                      <li>4 cl de soda au gingembre</li>
+                      <li>4 cl de crème de framboise</li>
+                      <li>1 pincée de gingembre en poudre</li>
+                    </ul>
+                    <hr />
+                    <p><strong>Préparation :</strong></p>
+                    <div class="preparation">
+                      <p>
+                        1. Dans un grand verre, mélangez délicatement la crème
+                        de framboise, le soda au gingembre, le champagne et la
+                        bière.
+                      </p>
+                      <p>2. Saupoudrez de gingembre.</p>
+                      <p>3. Servez frais.</p>
+                    </div>
+                    <button class="view-recipe-button">
+                      Voir toute la recette
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h2 class="cocktail-title">cocktail frênette</h2>
           </div>
           <div class="col-4">
             <div class="flip-container">
               <div class="flipper">
                 <div class="front">
                   <!-- Contenu du recto -->
-                  <p>image</p>
+                  <img src="img/cocktail-on-2.jpg" alt="" />
                 </div>
                 <div class="back">
                   <!-- Contenu du verso -->
@@ -234,20 +287,7 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-4">
-            <div class="flip-container">
-              <div class="flipper">
-                <div class="front">
-                  <!-- Contenu du recto -->
-                  <p>image</p>
-                </div>
-                <div class="back">
-                  <!-- Contenu du verso -->
-                  <p>Texte de dos</p>
-                </div>
-              </div>
-            </div>
+            <h2 class="cocktail-title">cocktail Delirium</h2>
           </div>
         </div>
       </div>
@@ -280,11 +320,11 @@
         </div>
       </div>
     </div>
-    <div class="container-footer">
+    <div class="container-footer-background">
       <div class="container">
         <div class="row">
-          <div class="col-2">
-            <img src="./img/logo.png" alt="logo de la marque Licorne" />
+          <div class="col-2 container-footer">
+            <img src="/src/img/logo.png" alt="logo de la marque Licorne" />
             <p>©2024 Licorne. Tous droits réservés.</p>
             <p>
               Licorne<br />
@@ -293,8 +333,24 @@
               CH-1470 Estavayer-Le-Lac
             </p>
           </div>
-          <div class="col-2">col 2</div>
-          <div class="col-2">col 3</div>
+          <div class="col-2 container-footer">
+            <ul>
+              <li>Politique de confidentialité</li>
+              <li>Politique de confidentialité</li>
+              <li>Politique de confidentialité</li>
+              <li>Politique de confidentialité</li>
+              <li>Politique de confidentialité</li>
+            </ul>
+          </div>
+          <div class="col-2 container-footer">
+            <ul>
+              <li>Politique de confidentialité</li>
+              <li>Politique de confidentialité</li>
+              <li>Politique de confidentialité</li>
+              <li>Politique de confidentialité</li>
+              <li>Politique de confidentialité</li>
+            </ul>
+          </div>
           <div class="col newsletter-container">
             <h3>inscris toi à la newsletter !</h3>
             <div class="button-textfield newsletter-element">
@@ -308,7 +364,11 @@
               />
             </div>
             <p class="newsletter-element">SUIS NOUS</p>
-            <p class="newsletter-element">insta tiktok</p>
+            <div class="newsletter-element">
+              <img src="img/instagram.png" alt="lien vers le instagram de
+              Licorne"" />
+              <img src="img/tiktok.png" alt="lien vers le tiktok de Licorne" />
+            </div>
           </div>
         </div>
       </div>
