@@ -53,8 +53,10 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            affiche header promotionnelle enfaite se sera en dehors du bootstrap
-            pour que ca fasse tout l'écran
+            <h2>
+              0% alcool <br />
+              100% de plaisir
+            </h2>
           </div>
         </div>
       </div>
@@ -63,7 +65,9 @@
       <div class="row">
         <div class="offset-1 col container-video">
           <div class="container-video-enfant">
-            <div class="rectangle photo-rectangle"></div>
+            <div class="rectangle photo-rectangle">
+              <img src="img/champ.jpg" alt="photo d'un champ">
+            </div>
             <div class="rectangle video-rectangle">video promotionnelle</div>
           </div>
         </div>
@@ -81,39 +85,81 @@
             valorisée à plus d'un milliard de dollars, non cotée en bourse et
             non filiale d'un grand groupe.” -wikipédia
           </p>
-          <a class="custom-button">
-            REGARDE NOTRE PROCESSUS (rajouter un target lien pour quil comprenne
-            que ca menne a une autre page)
+          <a class="custom-button" target="_blank">
+            REGARDE NOTRE PROCESSUS
             <img src="./img/arrow-light.png" alt="Arrow" class="arrow-img" />
           </a>
         </div>
       </div>
     </div>
-    <div class="biere-container">
-      <h2 class="biere-title">Blonde Helle Blond</h2>
-      <div class="red-background">
-        <div class="biere-text">
-          <p>
-            Eau, malt d'orge, colorant : E150c, arôme naturel, houblon.
-            <br />Allergènes : gluten<br /><br />
-            Contenant : bouteille en verre de 33cl<br />Prix à l'unité : CHF
-            4.60<br />Prix au pack de 4 : CHF 16.-
-          </p>
-        </div>
-        <div class="biere-image"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col biere-title-big"><h2>NOS BIÈRES</h2></div>
       </div>
-      <button class="shop-button">SHOP</button>
+      <div class="row">
+        <div class="col-6">
+          <img
+            src="img/biere-blonde.png"
+            alt="biere licorne blonde helles blond"
+          />
+        </div>
+        <div class="col-6">
+          <div class="biere-container">
+            <h2>BLONDE HELLES BLOND</h2>
+            <p>ingrédients :</p>
+            <p>Eau, malt d'orge, colorant : E150c, arôme naturel, houblon.</p>
+            <p>
+              Bouteille en verre de 33cl <br />
+              Prix à l'unité : CHF 4.60 <br />
+              Prix au pack de 4 : CHF 16.–
+            </p>
+            <p>Allergènes : Gluten</p>
+            <a class="biere-button-shop  target="_blank"">SHOP</a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          <h2 id="nos-bieres">nos bières</h2>
-        </div>
-        <div class="col biere-container">
-          <div>
+        <div class="col-6">
+          <div class="biere-container">
             <h2>brune dunkel dark</h2>
-            <p>description</p>
-            <button id="shop">SHOP</button>
+            <p>ingrédients :</p>
+            <p>Eau, malt torréfié d'orge, malt torréfié de blé, houblon.</p>
+            <p>
+              Bouteille en verre de 33cl <br />
+              Prix à l'unité : CHF 4.60 <br />
+              Prix au pack de 4 : CHF 16.–
+            </p>
+            <p>Allergènes : Gluten</p>
+            <a class="biere-button-shop  target="_blank"">SHOP</a>
+          </div>
+        </div>
+        <div class="col-6">
+          <img
+            src="img/biere-brune.png"
+            alt="biere licorne brune dunkel dark"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-6">
+          <img src="img/biere-ipa.png" alt="biere licorne IPA gluten free" />
+        </div>
+        <div class="col-6">
+          <div class="biere-container">
+            <h2>IPA gluten free</h2>
+            <p>ingrédients :</p>
+            <p>Houblon agrume, eau, coriandre, malt de seigle.</p>
+            <p>
+              Bouteille en verre de 33cl <br />
+              Prix à l'unité : CHF 4.60 <br />
+              Prix au pack de 4 : CHF 16.–
+            </p>
+            <p>sans Gluten</p>
+            <a class="biere-button-shop"  target="_blank">SHOP</a>
           </div>
         </div>
       </div>
@@ -136,7 +182,7 @@
               durant l'un de ses voyages au Canada qu’il a décidé de se lancer
               dans la production de bière.
             </p>
-            <button class="custom-button-inverse">LIRE NOTRE HISTOIRE</button>
+            <a class="custom-button-inverse"  target="_blank">LIRE NOTRE HISTOIRE</a>
           </div>
         </div>
       </div>
@@ -182,10 +228,10 @@
             notre processus de production respectueux de la nature et
             l'engagement de notre équipe envers la durabilité et l'excellence.
           </p>
-          <button class="custom-button">
+          <a class="custom-button"  target="_blank"> 
             VOIR PLUS
             <img src="./img/arrow-light.png" alt="Arrow" class="arrow-img" />
-          </button>
+          </a>
         </div>
         <div class="col-7 container-bio-image">
           <div class="rectangle-back">
@@ -195,7 +241,7 @@
             />
           </div>
           <div class="rectangle-front">
-            <img src="img/provisoire-photo-front.png" alt="photo du produit" />
+            <img src="img/biere-ipa.png" alt="photo du produit" />
           </div>
         </div>
       </div>
@@ -203,29 +249,51 @@
     <div class="section-coktail">
       <div class="container">
         <div class="row">
-          <div class="col-3" id="cocktails"><h2>tes coktails</h2></div>
-          <div class="col-7">
+          <div class="col-3" id="cocktails"><h2>tes moktails</h2></div>
+          <div class="col-7 cocktail-paragraphe">
             <p>
-              nous savons que les moktail ne sont pas si connu que ça donc nous
-              t'avons concocté des recettes rien que pour toi !
+              NOUS AVONS CONÇUS EXPRÈS POUR TOI, DES MOCKTAILS !<br />
+              DES RECETTES CRÉER POUR QUE LE GOUT SOIT PARFAIT AVEC NOS BIÈRES
             </p>
           </div>
           <div class="col-2">
-            <button class="custom-button-2">
+            <a class="custom-button-2">
               VOIR PLUS
               <img src="./img/arrow-light.png" alt="Arrow" class="arrow-img" />
-            </button>
+            </a>
           </div>
           <div class="col-4">
             <div class="flip-container">
               <div class="flipper">
                 <div class="front">
-                  <!-- Contenu du recto -->
+                  <!--  recto -->
                   <img src="img/cocktail-on-1.jpg" alt="" />
                 </div>
                 <div class="back">
-                  <!-- Contenu du verso -->
-                  <p>Texte de dos</p>
+                  <!-- verso -->
+                  <div class="content">
+                    <h2>Pour BRUNE DUNKEL DARK</h2>
+                    <p><strong>Ingrédients :</strong></p>
+                    <ul>
+                      <li>12 cl de blonde Helle Blond</li>
+                      <li>4 cl de champagne brut frappé</li>
+                      <li>4 cl de soda au gingembre</li>
+                      <li>4 cl de crème de framboise</li>
+                      <li>1 pincée de gingembre en poudre</li>
+                    </ul>
+                    <hr />
+                    <p><strong>Préparation :</strong></p>
+                    <div class="preparation">
+                      <p>
+                        1. Dans un grand verre, mélangez délicatement la crème
+                        de framboise, le soda au gingembre, le champagne et la
+                        bière.
+                      </p>
+                      <p>2. Saupoudrez de gingembre.</p>
+                      <p>3. Servez frais.</p>
+                    </div>
+                    <a class="view-recipe-button"  target="_blank">Voir toute la recette</a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -265,9 +333,7 @@
                       <p>2. Saupoudrez de gingembre.</p>
                       <p>3. Servez frais.</p>
                     </div>
-                    <button class="view-recipe-button">
-                      Voir toute la recette
-                    </button>
+                    <a class="view-recipe-button"  target="_blank">Voir toute la recette</a>
                   </div>
                 </div>
               </div>
@@ -278,13 +344,35 @@
             <div class="flip-container">
               <div class="flipper">
                 <div class="front">
-                  <!-- Contenu du recto -->
+                  <!-- recto -->
                   <img src="img/cocktail-on-2.jpg" alt="" />
                 </div>
-                <div class="back">
-                  <!-- Contenu du verso -->
-                  <p>Texte de dos</p>
-                </div>
+                  <div class="back">
+                    <!-- verso -->
+                    <div class="content">
+                      <h2>Pour IPA GLUTEN FREE</h2>
+                      <p><strong>Ingrédients :</strong></p>
+                      <ul>
+                        <li>12 cl de blonde Helle Blond</li>
+                        <li>4 cl de champagne brut frappé</li>
+                        <li>4 cl de soda au gingembre</li>
+                        <li>4 cl de crème de framboise</li>
+                        <li>1 pincée de gingembre en poudre</li>
+                      </ul>
+                      <hr />
+                      <p><strong>Préparation :</strong></p>
+                      <div class="preparation">
+                        <p>
+                          1. Dans un grand verre, mélangez délicatement la crème
+                          de framboise, le soda au gingembre, le champagne et la
+                          bière.
+                        </p>
+                        <p>2. Saupoudrez de gingembre.</p>
+                        <p>3. Servez frais.</p>
+                      </div>
+                      <a class="view-recipe-button"  target="_blank">Voir toute la recette</a>
+                    </div>
+                  </div>
               </div>
             </div>
             <h2 class="cocktail-title">cocktail Delirium</h2>
@@ -336,24 +424,18 @@
           <div class="col-2 container-footer">
             <ul>
               <li>Politique de confidentialité</li>
-              <li>Politique de confidentialité</li>
-              <li>Politique de confidentialité</li>
-              <li>Politique de confidentialité</li>
-              <li>Politique de confidentialité</li>
+              <li>Conditions générales de vente</li>
             </ul>
           </div>
           <div class="col-2 container-footer">
             <ul>
-              <li>Politique de confidentialité</li>
-              <li>Politique de confidentialité</li>
-              <li>Politique de confidentialité</li>
-              <li>Politique de confidentialité</li>
-              <li>Politique de confidentialité</li>
+              <li>conditions d'utilisation</li>
+              <li>politique de cookies</li>
             </ul>
           </div>
           <div class="col newsletter-container">
             <h3>inscris toi à la newsletter !</h3>
-            <div class="button-textfield newsletter-element">
+            <a class="button-textfield newsletter-element">
               <input type="email" id="email" name="email" required />
               <label for="email">Mail</label>
               <img
@@ -362,10 +444,10 @@
                 class="arrow-icon"
                 style="right: 30px"
               />
-            </div>
+            </a>
             <p class="newsletter-element">SUIS NOUS</p>
             <div class="newsletter-element">
-              <img src="img/instagram.png" alt="lien vers le instagram de
+              <img class="newsletter-reseau" src="img/instagram.png" alt="lien vers le instagram de
               Licorne"" />
               <img src="img/tiktok.png" alt="lien vers le tiktok de Licorne" />
             </div>

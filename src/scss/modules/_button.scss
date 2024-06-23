@@ -52,6 +52,7 @@
   color: #faedcd;
   border: none;
   border-radius: 5px;
+  width: 300px;
   padding: 20px 30px;
   font-size: 14px;
   font-weight: bold;
@@ -117,6 +118,7 @@
   padding: 20px 30px;
   font-size: 16px;
   font-weight: bold;
+  width: 240px;
   cursor: pointer;
   transition: all 0.3s ease;
   box-sizing: border-box;
@@ -145,6 +147,11 @@
   font-style: normal;
   font-variation-settings: "wdth" 100;
   text-transform: uppercase;
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 .button-textfield input {

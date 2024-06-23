@@ -31,8 +31,7 @@
 }
 
 .rectangle {
-  background-color: #cccccc;
-  border: 1px solid #999999;
+  background-color: #faedcd;
   position: absolute;
 }
 
@@ -47,11 +46,10 @@
   height: 340px;
   top: 230px;
   right: -20px;
-  background-color: rgba(204, 204, 204, 0.9);
+  background-color: #faedcd;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
 }
 
 .container-sylvain {
@@ -95,6 +93,8 @@
   margin-top: 45px;
 }
 
+/* section bio / savoir faire */
+
 .container-bio {
   padding-top: 150px;
   text-align: right;
@@ -129,19 +129,20 @@
   position: absolute;
   width: 555px;
   height: 774px;
-  background-color: lightblue;
+  background-color: #faedcd;
   transform: translateX(195px);
 }
 
 .container-bio-image .rectangle-front {
   position: absolute;
-  width: 433px;
+  width: 600px;
   height: 548px;
-  background-color: lightcoral;
-  left: -217px;
+  left: -300px;
   top: 96px;
   transform: translateX(195px);
 }
+
+/* section instagram */
 
 .container-insta {
   background-color: #4fb692;
@@ -151,7 +152,6 @@
 }
 
 .container-insta h2 {
-  /* revoir pour faire en sorte qu'il soit + collé au p du dessous */
   font-size: 40px;
 }
 
@@ -166,6 +166,8 @@
   max-width: 100%;
   max-height: 100%;
 }
+
+/* footer */
 
 .container-footer-background {
   background-color: #ff9111;
